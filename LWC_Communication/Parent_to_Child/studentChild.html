@@ -1,0 +1,11 @@
+<template>
+    <template if:true={displayCollege}>
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-tile label={college.name} href="/path/to/somewhere">
+            <p class="slds-truncate" title={college.seats}>Total Seats : {college.seats}</p>
+            <p class="slds-truncate" title={college.numberOfBranch}>Number of Branch :{college.numberOfBranch}</p>
+            <p class="slds-truncate" title={college.name}>Location : {college.location}</p>
+        </lightning-tile>
+    </div>
+</template>
+</template>
