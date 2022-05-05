@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="District selection">
+        <div style="padding: 6px;">
+    <lightning-combobox
+    name="District List"
+    label="Select District to Pass to Child"
+   
+    value={value}
+    placeholder="Select District"
+    options={optinsKeyVal}
+    onchange={handleChange} ></lightning-combobox>
+</div>
+<div  style="padding: 12px;" >
+<c-city-child ></c-city-child>
+</div>
+    </lightning-card>
+</template>
