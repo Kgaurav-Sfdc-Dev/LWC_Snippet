@@ -1,3 +1,13 @@
-# child to Parent Communication (declaratively)
+# child to Parent Communication (declaratively*)
+
+
+declaratively means : handling the event during the initialization of child component in the parent Component 
+
+ CustomerParent parent Component 
+ CarChild child Component 
+ 
+ 1. value enter in the child component will get transferd to parent component on button clicked 
+ 2. on button clicked js mehtod create one event and dispatch the same 
+ 3. parent js will hadle the event in their js and get the required Value 
 
 
