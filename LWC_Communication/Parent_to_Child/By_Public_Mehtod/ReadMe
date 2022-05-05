@@ -1,1 +1,2 @@
-
+#Parent to child communication by using calling public mehtod of Child Componet (ie. @api mehtod of child component )
+1. districtParent is parent component which will call the public mehtod of cityChild and pass the required attributes 
