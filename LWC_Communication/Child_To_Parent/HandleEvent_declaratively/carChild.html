@@ -1,0 +1,18 @@
+<template>
+   
+   
+        <lightning-layout>
+            <lightning-layout-item size="9">
+             <lightning-input label="Enter value" placeholder="send data to Parent Component"
+               value={dataToBeSend}  onchange={storeInputValue}>
+                    </lightning-input>
+
+            </lightning-layout-item>
+            <lightning-layout-item size="3" class="slds-m-top_large slds-m-left_xx-small">
+            <lightning-button-icon icon-name="utility:add" onclick={sendDataToParentComponent} ></lightning-button-icon>
+                
+            </lightning-layout-item>
+        </lightning-layout>
+       
+        
+</template>
