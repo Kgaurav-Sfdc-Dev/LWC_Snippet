@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Student Details">
+     
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" padding="around-small">
+                <lightning-input type="string" label="Enter Name " onchange={UpdateStudentName}></lightning-input>
+                </lightning-layout-item>
+               
+                <lightning-layout-item  size="12" padding="around-small">
+                    <lightning-input type="string" label="Enter College  " onchange={UpdateStudentCollege}></lightning-input>
+                </lightning-layout-item>
+                
+                <lightning-layout-item  size="12" padding="around-small">
+                    <lightning-input type="number" label="Enter Age " onchange={UpdateStudentAge}></lightning-input>
+                </lightning-layout-item>
+                
+                <lightning-layout-item size="12" padding="around-small">
+                    <lightning-input type="string" label="Enter Branch" onchange={UpdateStudentBranch}></lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item size="5" padding="around-small">
+                <lightning-button label="Submit" onclick={sendDataToListner}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+     
+
+    </lightning-card>
+    </template>
