@@ -1,1 +1,31 @@
+# share common js code to different Lwc Copmponent 
+--> Advantage : Maintainance of code becomes easy 
+                changes made in js file reflect in all the component 
+                
+
+# steps to be followed 
+1. create Lwc component whose Js file will contains the shared javascript code in mehtod
+  and use ecport statement to export your mehtod as ECMAScript module 
+  
+  Syntax:  
+   Component name is : Sharedjs
+   
+   const methodName =function(a,b)
+   {
+       
+   }
+   export {mehtodName}; 
+   
+   -->export the function like this ,Now any lwc component can use this 
+   
+2. create one more component where we have to use above ECMAScript 
+   Lets take name is : random
+   so in-randomjs
+   
+   synatx:
+   import {mehtodName} from 'c/Sharedjs'
+   
+   once imported used it any where in ur random js file 
+   
+ 
 
