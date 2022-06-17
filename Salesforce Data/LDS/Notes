@@ -14,5 +14,40 @@ key points :-
 Advantages :--
 1. No server controller needed 
 2. Caches resquested results on client side 
-    it means if user request for the same data again and again then it will supplies 
-3. 
+    it means if user request for the same data again and again then it will supplies the data 
+    from browser so that will avoid the further server call 
+    it one component requested the data then result is cached that cache result will 
+    be given to other component if they request 
+    
+3.  invalidates cache entries 
+
+
+LDS Base Component 
+
+1. lightning-record-view-form (view record ,custom layout )
+    it mainly focus on viewing the existing record 
+  
+
+2. lightning-record-edit-form (create record, edit record ,custom layout )
+   it mainly focus on editing the existing record 
+   
+   
+3. lightning-record-form ( create record ,edit record ,view record ,layout support )
+   it is kind of combination of both lightning edit form and view form .
+   
+   Custom layout :- we can specify what are the field we want on the 
+                    page layoyt of LC
+                    
+   Layout support :- we can pull the field which are available on the page layoyt 
+   
+   Summay ::
+   create record -> record form /edit form 
+   edit record -->  record form /edit form 
+   view record -->  record form /view form 
+   custom layout --> view form /edit form 
+   layout support --> record form 
+   
+   
+   
+
+
