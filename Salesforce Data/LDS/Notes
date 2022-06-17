@@ -48,6 +48,12 @@ LDS Base Component
    layout support --> record form 
    
    
+   Note -: choose wisely which base component is more appropriate for the requirement 
+     preferred -: record form because it is combination of both 
+                  but some time we need custom layout so we have to go for other 
+                  base component 
+   
+   
    
 
 
