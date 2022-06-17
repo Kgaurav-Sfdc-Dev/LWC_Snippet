@@ -1,0 +1,18 @@
+# LDS -
+Lightning data services is used to access the salesforce data  and metadata 
+without a need of server side Controller 
+
+
+key points :-
+1. Buit on the top of user interface api 
+2. Get data and metadata in same response 
+3. Respects CRUD access and field level Security
+    1. it means if user dont have read permission of some field then user wont able to see that field in Component 
+    2   if user dont have edit permission of same field then user wont able to edit that field 
+4. Respect sharing setting
+
+Advantages :--
+1. No server controller needed 
+2. Caches resquested results on client side 
+    it means if user request for the same data again and again then it will supplies 
+3. 
