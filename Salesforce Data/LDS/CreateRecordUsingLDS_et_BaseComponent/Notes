@@ -1,1 +1,31 @@
+Create Record using Lds without Base Component 
 
+
+Steps to be followed 
+
+1. create Html tempelate from where User can give the required data to 
+   create the record of any Object .
+2. by using different method we have to get the user input val to js file 
+  Lds -----works start
+3. inport the wire adapters {createRecord } from the module "lightning/uiRecordapi"
+     syntax : import { createRecord } from 'lightning/uiRecordApi';
+     1. create record is the Fn
+     2. lightning is the name space 
+     3. uiRecordApi is the module 
+4.  map the field value of the record from the value which is entered by User in UI 
+5. defibe the Object name 
+6. use the imported mehtod {createrecord}
+   it will accept the parameter 
+   
+   //---> fields and Object name 
+   //---> refer the Code Prent in same Folder 
+   
+  createRecord(input).then(reponse =>{
+     //this will get executed Once the record is succefully crerate 
+  }
+  ).catch(error=>{
+      //this part executed if any error Occured 
+  }
+  )
+  
+  
