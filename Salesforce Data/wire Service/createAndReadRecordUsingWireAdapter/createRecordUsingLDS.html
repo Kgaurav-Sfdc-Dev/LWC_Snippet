@@ -1,0 +1,24 @@
+<template>
+    <lightning-layout>
+        <lightning-layout-item size="6">
+    <lightning-card title="Create Account record">
+        <div class="slds-var-m-left_medium slds-var-m-right_x-small">
+        <lightning-input  label="Account Name" name="AccountName" onchange={AccountNameChange}></lightning-input>
+        <lightning-input label="Account Phone" name="AccountName" onchange={PhoneNameChange}></lightning-input>
+        <lightning-button  class="slds-var-m-top_large" label="Create Account" variant="brand" onclick={CreateAccount} >
+        </lightning-button>
+        </div>
+    </lightning-card>
+    </lightning-layout-item>
+    <lightning-layout-item size="6">
+        <lightning-card title="view created Account">
+            <div class="slds-var-m-left_medium">
+            <lightning-formatted-text value={AccountName1}></lightning-formatted-text> <br/>
+            <lightning-formatted-phone value={AccountPhone1}></lightning-formatted-phone><br/>
+            <lightning-formatted-name value={AccountcreateBy1}></lightning-formatted-name>
+            </div>
+    </lightning-card>
+    </lightning-layout-item>
+    </lightning-layout>
+    
+</template>
