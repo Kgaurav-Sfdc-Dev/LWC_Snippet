@@ -2,5 +2,23 @@
 
 wire is a reactive service which is built On LDS 
 
-1. wire service can be used to get the data from LDS 
+1. wire service can be used to get the data from lds 
   OR from normal apex class 
+  
+2. we can use wire service to read data from the one of the wire adapter 
+    wire adapter -> LDS fn or normal apex calls 
+ 
+3.  wire service automatically cache the data on client side 
+    which is great for data read Operation
+    
+4.  avoid using wire service if ur performing any DML operation on retrived data 
+
+5.  Properties decorated with @wire is reactive but private 
+
+
+
+wire adapter : 
+wire adapter is the Lds function which is imported from the LDS module
+then we can use wire service on that wire adapter 
+
+refer code in same folder : for better understanding
