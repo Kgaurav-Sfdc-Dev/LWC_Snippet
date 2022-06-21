@@ -22,3 +22,7 @@ wire adapter is the Lds function which is imported from the LDS module
 then we can use wire service on that wire adapter 
 
 refer code in same folder : for better understanding
+
+wireservice : - 
+  when wire service use with the wire adapter it create a promise 
+  1. promise can be hadled by using then and catch 
