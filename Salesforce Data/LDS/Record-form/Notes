@@ -1,1 +1,15 @@
+# Lightning record -from 
 
+1. base component
+2. Switches between view and edit modes automatically when the user begins editing a field in a view form
+    means -> 
+3. Uses the object's default record layout
+4. Loads all fields in the object's compact or full layout, or only the fields you specify
+
+
+Important  _attributes :
+ 1. object-api-name : this attributes is always required   
+ 2. record-id  : it is required only when the user is editing or viewing the record 
+ 
+ 
+ 
