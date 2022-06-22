@@ -1,0 +1,39 @@
+<template>
+    <lightning-card title="Account manager using base Component">
+        <lightning-layout>
+            <lightning-layout-item size="6">
+        <lightning-card title="Create Account record">
+            <div class="slds-var-m-left_medium slds-var-m-right_x-small">
+              <lightning-record-edit-form object-api-name="Account" onsuccess={successHandler}>
+                <p><lightning-input-field field-name="Name"></lightning-input-field></p>
+                <p><lightning-input-field field-name="Phone"></lightning-input-field></p>
+               
+                <p><lightning-button type="submit" variant="Brand" name="save" label="create Account"></lightning-button></p>
+
+
+
+              </lightning-record-edit-form>
+            </div>
+        </lightning-card>
+        </lightning-layout-item>
+        <lightning-layout-item size="6">
+            <lightning-card title="view created Account">
+                <div class="slds-var-m-left_medium">
+              <lightning-record-view-form record-id={recordID} object-api-name="Account">
+               <div class="slds-box">
+                <p> <lightning-output-field field-name="Name"></lightning-output-field></p>
+                <p> <lightning-output-field field-name="Phone"></lightning-output-field></p>
+                </div>
+
+
+              </lightning-record-view-form>
+    
+                </div>
+        </lightning-card>
+        </lightning-layout-item>
+        </lightning-layout>
+        </lightning-card>
+
+
+
+</template>
