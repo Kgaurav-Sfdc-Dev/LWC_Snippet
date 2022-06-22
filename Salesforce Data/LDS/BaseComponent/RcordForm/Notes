@@ -1,1 +1,20 @@
+# record from 
 
+it has both the power means it can switch between the edit form and view form 
+
+if recordid is passed as an attributes then it will be loaded as an edit and view mode 
+if recordID is passed blank then it will be loaded as an create mode 
+
+common attributes :
+object api name 
+recordID
+columns -> to specify how many column we want 
+fields ->to specify what are the fields we want in the form
+layout type -> FULL / COMPACT 
+               full -> it will load all fields which are present in default layoyt 
+               compact -> it will pick fields from the compavt layoyt 
+onsucess -xfdg>
+
+mode : ->read only (for only viewing the record  ,can't be editable)
+         view (allow only to view the rcored ,but can be make editable )
+         edit (for editing the record ,then on click of save it will swich the form to view mode )
