@@ -21,7 +21,8 @@ wire adapter :
 wire adapter is the Lds function which is imported from the LDS module
 then we can use wire service on that wire adapter 
 
-refer code in same folder : for better understanding
+refer code in same folder : for better understanding (createAndReadRecordUsingWireAdapter)
+in this i am creting the cretaing the record as well as viewing the record 
 
 wireservice : - 
   when wire service use with the wire adapter it create a promise 
