@@ -1,6 +1,6 @@
 # lightning-record-edit-form 
   
-  //  important 
+  //  important : it switch between two mode --create record and edit record 
   // as soon as we give the record ID as attributes to the record-edit-fomr 
      then all details will alredy appears in the fomr and we can edit that 
     
