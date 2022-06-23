@@ -22,7 +22,7 @@ mode : ->read only (for only viewing the record  ,can't be editable)
          edit (for editing the record ,then on click of save it will swich the form to view mode )
 
 
-//code :-->
+//code :--> {ecordFormDemo} refer this code present in same folder 
 as soon as our component Load it will open as an create mode because recordID is empty 
 then as user clicked On Submit ,record will be available 
 so component will automatically switch to edit code / view mode. 
