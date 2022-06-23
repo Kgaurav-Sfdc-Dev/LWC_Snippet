@@ -4,7 +4,7 @@
   // as soon as we give the record ID as attributes to the record-edit-fomr 
      then all details will alredy appears in the fomr and we can edit that 
     
-  mote -: if record id is present works as edit form 
+  mode -: if record id is present works as edit form 
           if record id not present then works as create record from 
 
 
