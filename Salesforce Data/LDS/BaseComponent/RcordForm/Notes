@@ -52,7 +52,14 @@ ad:  if we give hard reference then whenever any one tries to delete the field
     
 
 
-
+# Giving hard reference to the fields or Objects is always prefered as it will automatically pickUp 
+  chages whene you modify your fields orObjects .it will also Prevent the user to delete 
+   those fields/Object
+   
+   suppose i want to import the name Fields 
+   Syntax : import Name_field from '@salesforce/schema/Account.Name';
+   
+   now we can use Name_field in lwc that refer to the account Name field 
 
 
 
