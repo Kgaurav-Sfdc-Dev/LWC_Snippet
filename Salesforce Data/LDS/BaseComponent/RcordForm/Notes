@@ -38,3 +38,6 @@ fields
 
 layout -type
 1.  we can specify what kind of layout we want compact layout or full layout !!
+
+atleast One is required to bring the fields on the comp0onent --
+if we dont specify any then no fields will be there 
