@@ -27,3 +27,14 @@ as soon as our component Load it will open as an create mode because recordID is
 then as user clicked On Submit ,record will be available 
 so component will automatically switch to edit code / view mode. 
 from view mode -----> to edit mode {just try to edit it will convert }
+
+
+
+
+/// fields attributes vs layout-type :
+fields 
+1 - in fields attributes we can pass the types of fields is required (array if field name )
+2. - order of the field can be fixed in the array of fileds oNLy 
+
+layout -type
+1.  we can specify what kind of layout we want compact layout or full layout !!
