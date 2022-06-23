@@ -41,3 +41,19 @@ layout -type
 
 atleast One is required to bring the fields on the comp0onent --
 if we dont specify any then no fields will be there 
+
+
+
+
+
+# How to give hard reference 
+ad:  if we give hard reference then whenever any one tries to delete the field 
+     salesforce tell that field or object has been used some where in lc not allow u to delete the same 
+    
+
+
+
+
+
+
+
