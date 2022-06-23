@@ -18,3 +18,5 @@ refer code for better Understanding: --
 
 
  # lightning-record-view-form 
+ attributes : recordID 
+ object-api-name : Any object 
