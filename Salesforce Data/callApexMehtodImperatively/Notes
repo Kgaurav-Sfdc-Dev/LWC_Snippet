@@ -14,10 +14,17 @@
        
        handleSubmit() //On button clicked Mehtod 
        {
-        mehtod_Name() //imported Method //argument can be passed in json format of Object 
-        {
+        // ARGUMENT_NAME is the name of argumnret which is accepted by apex mehtod which is called 
+        //Property is js variable which need to be pass to apex mehtod 
+        mehtod_Name( {ARGUMENT_NAME : THIS.property}) //imported Method //argument can be passed in json format of Object 
+        .then(reponse => {
+            
+             reponse contains all the data sent by Apex mehtod 
+         
+        }).catch(error => {
         
-        }
+             error contains all the error part occured while fetching the record 
+        })
        
        
        }
