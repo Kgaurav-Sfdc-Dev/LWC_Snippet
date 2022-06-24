@@ -1,1 +1,26 @@
-
+   # imperative call 
+   To control when the method invocation occurs (for example, in response to clicking a button), call the method imperatively
+   
+   
+   # imperative call advantages :
+   
+   1. only way to call non cacheable mehtod to lwc (it can call non-cacheable method )
+   2. On demand call 
+   3. The imported function returns a promise(asynchronus mehtod of js )
+       syntax : 
+       import mehtod_Name from '@salesforce/apex/ClassName.MehtodName'
+       
+       on button click i want to call the impoeter method
+       
+       handleSubmit() //On button clicked Mehtod 
+       {
+        mehtod_Name() //imported Method //argument can be passed in json format of Object 
+        {
+        
+        }
+       
+       
+       }
+       
+       
+   
