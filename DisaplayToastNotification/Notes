@@ -1,0 +1,30 @@
+# Toast notification is kind of POP UP that will be populated on the top of the page based On the response/based on the Configuration 
+
+there are 4 types Of toast we can show 
+1. info  --Default) A gray box with an info icon.
+2. success -- A green box with a checkmark icon.
+3. error --A yellow box with a warning icon.
+4. warning --A red box with an error icon.
+
+
+
+mode : Determines how persistent the toast is. Valid values are.
+   1. (Default) Remains visible until the user clicks the close button or 3 seconds has elapsed, whichever comes first.
+   2. Remains visible for 3 seconds.
+   3. Remains visible until the user clicks the close button.
+
+
+
+
+Steps : below steps are required to display the toast 
+1    import { ShowToastEvent } from 'lightning/platformShowToastEvent';
+     // in the contructor configure Ur toast 
+2.   const evt = new ShowToastEvent({
+            title: 'Some text ',
+            message: 'what message we want to display ',
+            variant: '' [info ,success,error,warning]
+      });
+     //dispatch the event  
+3.   this.dispatchEvent(evt);
+
+
