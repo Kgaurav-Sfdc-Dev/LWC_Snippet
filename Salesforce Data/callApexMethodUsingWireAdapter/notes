@@ -5,3 +5,36 @@
 
 Note :--
 mehtod is called by wire service then make the mehtod (cacheable = True).
+
+
+
+deepUnderstanding of wire service and adapter 
+steps 1. import MehtodAliasName from '@salesforce/apex/CLASS_NAME/MEHTOD_NAME'
+          meaning -> what ever the mehtod will retunr that will be store in 
+                     wire adapter " MehtodAliasName "
+                     
+steps 2 : wire service will be used to read the data from wire adapter 
+        
+          syntax :
+          @wire(MehtodAliasName)property ;
+
+Explanation :
+The property is assigned a default value after component construction 
+and before any other lifecycle event.
+THat default value is nothing But a Object with the properties 
+data and error ,and both have the value stored Undefined 
+
+means : property {data : Undefined ,error : Undefined };
+
+Once the Component loaded and lifecycle event Occured 
+if adapter provide some value to wire service Property then that will be stored in data properties of the Object 
+and error become Undefined 
+if adapter will not Provide any value then error Property assigned by eerro Object and data remains Undefined
+
+Note : 
+When data becomes available from the wire adapter, it’s set in the data property (error remains undefined). When newer versions of the data are available, 
+data is updated.
+
+If an error occurs in the adapter, for example when retrieving the data, error is populated with an error object (data is set to undefined).
+
+
