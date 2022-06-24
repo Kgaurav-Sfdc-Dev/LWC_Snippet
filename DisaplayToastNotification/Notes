@@ -9,9 +9,9 @@ there are 4 types Of toast we can show
 
 
 mode : Determines how persistent the toast is. Valid values are.
-   1. (Default) Remains visible until the user clicks the close button or 3 seconds has elapsed, whichever comes first.
-   2. Remains visible for 3 seconds.
-   3. Remains visible until the user clicks the close button.
+   1. dismissible    : (Default) Remains visible until the user clicks the close button or 3 seconds has elapsed, whichever comes first.
+   2. pester         : Remains visible for 3 seconds.
+   3. sticky        : Remains visible until the user clicks the close button.
 
 
 
