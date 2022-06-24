@@ -1,1 +1,7 @@
+# Apex controller 
+1. Class must be Public 
+2. mehtod must have @auraEnabled Annotation 
+3. mehtod must be public and static
 
+Note :--
+mehtod is called by wire service then make the mehtod (cacheable = True).
