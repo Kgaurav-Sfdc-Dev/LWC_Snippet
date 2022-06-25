@@ -28,6 +28,27 @@
      NavigationMixin.GenerateUrl --> use this mehtod to get Promise that resolves to the resulting 
                                      url ;
     
+ # IMPORTANT 
+   
+    Page Refrences Types : to where we can naviagte 
+    USE NAVIGATE METHOD TO NAVIAGTE THESE PAGES 
+    
+    1. lightning Component 
+    2. knowledge article 
+    3. Named Page (Any file in Org)
+    4. Navigation item page (navigate between Tabs )
+    5. Object Name (Particular Object )
+           there option available 
+           1. new Page of the Object 
+           2. list view of the Object 
+           3. Home page of the Object 
+    6. RecorD Page 
+    7. Record relationship Page 
+    8. Web Page 
+    
+    
+    
+    
     
    
    
