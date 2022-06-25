@@ -1,0 +1,13 @@
+# Automatic supply of recordId and objectapiname is done by framework 
+    when the component is placed on Object record Page(app builder record Pagee)
+
+steps :
+just declare two Public property 
+1. recordId
+2. objectapiName 
+
+these two automatically get val from FRamework 
+
+Note : if component placed on the other page 
+        like Home page ,app page then these two property  have 
+        null value.
