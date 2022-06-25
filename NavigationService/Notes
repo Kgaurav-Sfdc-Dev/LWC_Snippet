@@ -13,6 +13,9 @@
 
    pageRefrence is a JS Object that describe the 
    on which Page u want to navigate && what are the attributes u want to Pass
+   attributes allow to control the Properties Og the Page referecne Object .
+  
+  
    Page type 
    its Attributes 
    the state of the Page 
