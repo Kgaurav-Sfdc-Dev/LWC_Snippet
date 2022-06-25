@@ -9,6 +9,7 @@
     object Home Page 
     community Page 
     tab (navItem)
+    named Page : to preview a file 
     
 3. it uses A pageRefrence to navigate (instead of Url)
 
