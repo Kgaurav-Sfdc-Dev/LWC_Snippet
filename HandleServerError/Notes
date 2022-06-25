@@ -1,0 +1,57 @@
+# There are different way to access the salesforce data 
+   and error thrown by server have also different st .
+   
+Common steps to be done in all kind of handling error 
+1. create one LWC component with the name [ldsUtils]  
+   in their Js file Paste the code from Github lwc recipe
+   and deply to the Org 
+   
+   Once the deployment done successfully 
+   
+2.  import { reduceErrors } from 'c/ldsUtils';
+   ------*****-----------------------
+   
+Specific Case 
+  
+  1. # handling error On imperative call 
+  
+      error Propery defined in js file (Use error Property in MarkUp to display Message )
+  
+      onbuttonClick suppose handleSubmit is Mehtod 
+      
+      handleSubmit()
+      {
+         importedApexControllerMethod({
+              //parameter to the method
+         }).then(response => {
+              // code to execute if the promise is resolved
+         }).catch(error =>{
+            this.error  = reduceErrors(error); // code to execute if the promise is rejected ;
+         })
+      
+      }
+      
+  2.  # handling error On wire Property 
+  
+     @wire(MehtodName, { attribute In keyVal pair })
+     PropertyName;
+     get errors() {  
+        return (this.PropertyName.error) ?  reduceErrors(this.PropertyName.error) : [];
+           
+    }
+    
+  
+  
+  3.  # handling error On wire functions
+  
+  
+    errors;
+    @wire(MehtodName, { attribute In keyVal pair })
+    PropertyFun({data, error}) {
+        if (error)
+            this.errors = reduceErrors(error);
+    }
+      
+      
+   
+   
