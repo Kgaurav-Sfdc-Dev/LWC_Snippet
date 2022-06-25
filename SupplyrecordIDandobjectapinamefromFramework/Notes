@@ -11,3 +11,10 @@ these two automatically get val from FRamework
 Note : if component placed on the other page 
         like Home page ,app page then these two property  have 
         null value.
+        
+        
+        
+        
+Note : 
+if @api recordId is givne wrong then component loaded as create mode (whith  field related to object Name )
+if @api objectApiName is givne wrong then component not get loaded Only 
