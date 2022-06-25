@@ -1,1 +1,34 @@
 # Navigation service 
+
+1. it is a Part of lightning/navigation Module 
+2. it allow to navigate to different Page types like 
+    Records Page 
+    other component 
+    web page 
+    list view 
+    object Home Page 
+    community Page 
+    
+3. it uses A pageRefrence to navigate (instead of Url)
+
+   pageRefrence is a JS Object that describe the 
+   on which Page u want to navigate && what are the attributes u want to Pass
+   Page type 
+   its Attributes 
+   the state of the Page 
+
+4. Navigation Service Methods 
+
+    NavigationMixin.Navigate --> 
+    use this Mehtod to navigate to another Page in applicatiion 
+    
+    parameter : take pagereference parameter which hold all property of your page 
+                in which u want to navigate 
+                
+     NavigationMixin.GenerateUrl --> use this mehtod to get Promise that resolves to the resulting 
+                                     url ;
+    
+    
+   
+   
+    
