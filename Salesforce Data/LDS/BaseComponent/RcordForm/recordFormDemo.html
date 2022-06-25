@@ -2,9 +2,15 @@
     <!--recored fomr will open the fomr in create mode because as of now no rec
     recordID  present ,once on success recordid will be provide then it will swithc to vi
     view mode --from view one can simply edit any field to make edit form
-
+     
     layout-type="Compact"
-    -->
+    object-api-name={objectApiName} record-id={recordId} 
+              layout-type="Full"
+              columns="2" mode="edit"  
+      
+
+
+     -->
     <lightning-card title="Record form Demo">
         <div class="slds-var-m-left_medium slds-var-m-right_medium">
       <lightning-record-form  object-api-name="Account" fields={fieldArray}
