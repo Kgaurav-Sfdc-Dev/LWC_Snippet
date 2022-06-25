@@ -51,6 +51,38 @@
     
     
     
+    Steps To used Navigation 
+    1. import { NavigationMixin } from 'lightning/navigation';
+    2. Apply the NavigationMixin function to base js class 
+       sysntax : 
+         export default class MyCustomElement extends NavigationMixin(LightningElement) {}
+    3. Create a plain JavaScript PageReference object that defines the page.
+           pageRefrence contains all the information where user want to navigate 
+    
+    4.  To dispatch the navigation request, call the navigation service. 
+    
+        [NavigationMixin.Navigate](pageReference, [replace])
+        
+        example :
+         navigateNext() {
+       this[NavigationMixin.Navigate]({
+           type: 'standard__navItemPage',
+           attributes: {
+               apiName: this.tabName,
+           },
+       });  // page ref Object close here 
+   }
+   
+   
+   ### Page ref object generally Contains Attributes 
+      1.type :''
+      2. attributes : {}
+      3. state :    //Optioonal
+        
+                               
+    
+    
+    
     
     
    
