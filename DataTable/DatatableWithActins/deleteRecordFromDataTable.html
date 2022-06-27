@@ -1,0 +1,28 @@
+<template>
+  <lightning-card title="Demo dataTable different actions ">
+    
+    <div class="slds-var-m-left_small">
+     <lightning-input type="number" 
+     min="1" 
+     max="99" 
+     message-when-range-overflow="Please enter  number between Range 1 - 99 " 
+     message-when-range-underflow="Please enter number between Range 1 - 99"
+     onchange={getUrCon}></lightning-input>
+
+       <template if:true={responseReceived} >
+        <lightning-datatable
+         key-field="Id"
+         data={conList}
+         columns={columns}
+         onrowaction={handleRowAction}>
+
+            </lightning-datatable>
+        </template>
+        </div>
+    
+
+
+
+
+    </lightning-card>
+</template>
