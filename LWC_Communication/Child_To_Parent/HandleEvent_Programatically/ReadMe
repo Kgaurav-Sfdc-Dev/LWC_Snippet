@@ -1,1 +1,32 @@
+# Handle the event Programatically 
 
+
+Steps :
+
+1. fire event from child make sure that bubble ==true (if true then only the parent component can list the fired event )
+
+    syntac ref :
+    const inPutChange =new CustomEvent('inputvalchanged',{detail: event.target.value , bubbles :true});
+         this.dispatchEvent(inPutChange);
+
+2. develope a contructor in Parent component 
+
+   contructor()
+   {
+     super();
+     this.tempelate.addEventListener(' event name which is fired from thechild compo  ' ,  '----bind the event handler of the parent     ');
+   
+   }
+   
+   
+   syntax :
+      fecthResponse(event)     // suppose this is event listener 
+    {
+        this.response =event.detail;
+    }
+    constructor()
+    {
+        super();
+        this.template.addEventListener('inputvalchanged',this.fecthResponse.bind(this));  //1st arg :event name refer step 1 syntax 
+                                                                                           //2nd arg : binding the handler 
+    }
