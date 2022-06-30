@@ -2,4 +2,29 @@
 
 # steps to be followed
 
-1. 
+1.  in child markUp call your js Mehtod 
+    meaning
+    
+    <lightning-input label ="some name " onchange={callJs} ></lightning-input> 
+    ONCHAGE of input it call js 
+
+2. in js method fire the event which need to be handled by Parent component 
+     
+      callJs()
+      {
+         const onChnageCall =new CustomEvent('nameOfEvent'{detail : valueTobePassed})
+         syntax : new CustomEvent('EventNameAny Name ' PayLoad );
+                   payLoadFormat :   {detail : valueTobePassed }
+                   
+          fire the Event :
+          
+          this.dispatchEvent(onChnageCall); //argunment is name of variable 
+        
+      }
+      
+ 3. Now handle the event in Parent Component 
+   there are two way to handle the fired event
+ 1    one from tag itsef 
+ 2    parent js file 
+  
+
