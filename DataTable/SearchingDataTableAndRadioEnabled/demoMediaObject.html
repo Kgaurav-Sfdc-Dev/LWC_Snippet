@@ -1,0 +1,19 @@
+<template>
+  <lightning-card title="Demo data table ">
+   <div class={class1}  >
+   <!--input box-->
+     <div class="slds-var-m-bottom_medium">
+        <lightning-input  type="search" placeholder="search contcat by name " label="contact" onchange={searchStudent}></lightning-input>
+        </div>
+   <!--input box end -->
+    <lightning-datatable
+    max-row-selection  ='1'
+    key-field="id"
+    data={studentObj}
+    columns={columns}
+    onrowselection={handleRowSelection}>
+</lightning-datatable>
+    </div> 
+   </lightning-card>
+        
+</template>
