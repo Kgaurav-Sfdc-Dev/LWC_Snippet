@@ -1,0 +1,5 @@
+# datatable radio button for single selection from the table 
+
+attributes :  max-row-selection  ='1'  
+it will allow end user to select only one record from the datatable 
+and covert the checkbox button to radio button 
