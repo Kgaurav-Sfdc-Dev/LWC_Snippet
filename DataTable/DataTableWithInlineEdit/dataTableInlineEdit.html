@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Demo inline edit">
+        <div class="slds-var-m-around_medium">
+         
+          <template if:true={recordFound}>
+            <lightning-datatable
+                key-field="Id"
+                data={account}
+                columns={columns}
+                onsave={handleSave}
+                draft-values={draftValues}
+                hide-checkbox-column
+            >
+            </lightning-datatable>
+        </template>
+        <template if:false ={recordFound}>
+          {error}
+        </template>
+
+        </div>
+        </lightning-card>
+</template>
