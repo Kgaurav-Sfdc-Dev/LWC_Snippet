@@ -1,1 +1,5 @@
-
+# Picklist is a dataTypes which is not supported by LDT 
+  so we have to create our own Types then Use 
+  
+  Steps : 
+  
