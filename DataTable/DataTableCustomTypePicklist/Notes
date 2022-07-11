@@ -1,5 +1,24 @@
 # Picklist is a dataTypes which is not supported by LDT 
   so we have to create our own Types then Use 
   
-  Steps : 
+  There are 4 Component : 
+  C-1 : datatable1 
+  
+  
+  
+  C-2 : datatable2
+  
+  
+  
+  
+  C-3 : lwcPicklist
+  
+  
+  
+  c-4 : dataSty(Custom style Uploaded as a static resource)
+  
+  
+  
+  
+  
   
