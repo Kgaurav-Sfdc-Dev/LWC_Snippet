@@ -3,10 +3,25 @@
   
   There are 4 Component : 
   C-1 : datatable1 
+              sub : template : UI structure 
+              js file : functionality 
+              css : custom styling 
+              metafile : tell about the placement of component 
   
+   Steps Performed In C-1 :
+             1. Calling chid component <c-datatable2></c-datatable2>
+                and passing attributes  the required attributes 
+                and defined all possible event 
   
-  
-  C-2 : datatable2
+  C-2 : datatable2(it work like a dataTable because it import lightning/datatable)
+                   js file extedns datatable 
+                   import the static css in this js file only 
+            
+            
+            sub : template : contains nothing 
+                   customtemp : call the chid coomponent 
+                   js file :  functionality 
+                   
   
   
   
