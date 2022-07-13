@@ -1,0 +1,25 @@
+<template>
+   
+    <!--check if data there -->
+    <template if:true={data}>
+         <!--c-datatable2 is child which 
+        1. import lightning datatable and acts as a datatable Only 
+        2. it will accept almost all the attributes which is accepted by the data table 
+        3. like key-field ,data,cloumns pageid ={call}  -->
+        
+        <c-datatable2 
+          
+            key-field="Id" 
+            data={data} 
+            
+            columns={columns} 
+            onpicklistchanged={picklistChanged} 
+            onvalueselect={handleSelection}
+            draft-values={draftValues} 
+            oncellchange={handleCellChange}
+            onsave={handleSave}
+            oncancel={handleCancel}
+            hide-checkbox-column>
+        </c-datatable2 >
+    </template>
+</template>
