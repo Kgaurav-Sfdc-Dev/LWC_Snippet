@@ -3,7 +3,9 @@
   
   There are 4 Component : 
   C-1 : datatable1 
-              sub : template : UI structure 
+  
+              sub : 
+              template : UI structure 
               js file : functionality 
               css : custom styling 
               metafile : tell about the placement of component 
@@ -18,15 +20,21 @@
                    import the static css in this js file only 
             
             
-            sub : template : contains nothing 
+            sub : 
+                   template : contains nothing 
                    customtemp : call the chid coomponent 
                    js file :  functionality 
+                   meta file : 
+                   css File : custom styling 
                    
   
-  
-  
-  
   C-3 : lwcPicklist
+              
+              sub :
+                  template : Using comboBox 
+                  js fine : fire the event and send the ID and seleted value 
+                            to grand parents 
+                  
   
   
   
