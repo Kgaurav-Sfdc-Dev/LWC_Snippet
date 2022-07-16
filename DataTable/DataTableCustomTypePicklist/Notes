@@ -32,7 +32,7 @@
               
               sub :
                   template : Using comboBox 
-                  js fine : fire the event and send the ID and seleted value 
+                  js file : fire the event and send the ID and seleted value 
                             to grand parents 
                   
   
